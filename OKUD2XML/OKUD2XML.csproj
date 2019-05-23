@@ -63,6 +63,7 @@
     <Compile Include="Core\Okud.cs" />
     <Compile Include="Engine\OkudPackage.cs" />
     <Compile Include="Extensions\DocumentEx.cs" />
+    <Compile Include="Extensions\LoggerSettingEx.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

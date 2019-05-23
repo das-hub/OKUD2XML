@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using das.Logger;
+using OKUD2XML.Extensions;
 
 namespace OKUD2XML.Core
 {
@@ -41,6 +42,6 @@ namespace OKUD2XML.Core
             }
         }
 
-        public static ILogger Log = Logger.Log(LoggerSetting.Empty.AddConsole(format:"{DateTime:HH:mm:ss}|{Level}|{Source}|{Message}").AddEveryDayFile(format: "{DateTime:dd.MM.yyyy HH:mm:ss}|{Level}|{Source}|{Message}"));
+        public static ILogger Log = LoggerFactory.CreateFactory(LoggerSetting.Empty.UseDefaultSetting()).CreateLogger();
     }
 }
