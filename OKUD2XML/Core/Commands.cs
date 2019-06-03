@@ -1,5 +1,5 @@
 ﻿using System;
-using das.Logger;
+using das.Extensions.Logger;
 using OKUD2XML.Engine;
 
 namespace OKUD2XML.Core

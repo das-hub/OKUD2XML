@@ -1,13 +1,13 @@
-﻿using das.Logger;
-using das.Logger.Extensions;
+﻿using das.Extensions.Logger;
+using das.Extensions.Logger.Extensions;
 
 namespace OKUD2XML.Extensions
 {
-    public static class LoggerSettingEx
+    public static class LoggerProviderEx
     {
-        public static LoggerSetting UseDefaultSetting(this LoggerSetting setting)
+        public static LoggerProvider UseDefaultWriters(this LoggerProvider provider)
         {
-            return setting
+            return provider
                     .AddConsole(format: "{DateTime:HH:mm:ss}|{Level}|{Source}|{Message}")
                     .AddEveryDayFile(format: "{DateTime:dd.MM.yyyy HH:mm:ss}|{Level}|{Source}|{Message}");
         }

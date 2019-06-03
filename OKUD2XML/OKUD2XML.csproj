@@ -34,8 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="das.Logger">
-      <HintPath>..\..\das.Logger\das.Logger\bin\Debug\das.Logger.dll</HintPath>
+    <Reference Include="das.Extensions.Logger">
+      <HintPath>..\..\das.Extensions.Logger\das.Extensions.Logger\bin\Debug\das.Extensions.Logger.dll</HintPath>
     </Reference>
     <Reference Include="Spire.Doc, Version=7.1.13.41046, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
       <HintPath>..\packages\FreeSpire.Doc.7.1.13\lib\net46\Spire.Doc.dll</HintPath>
@@ -63,7 +63,7 @@
     <Compile Include="Core\Okud.cs" />
     <Compile Include="Engine\OkudPackage.cs" />
     <Compile Include="Extensions\DocumentEx.cs" />
-    <Compile Include="Extensions\LoggerSettingEx.cs" />
+    <Compile Include="Extensions\LoggerProviderEx.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
