@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using das.Extensions.Logger;
+using das.Extensions.Logger.Abstractions;
 using OKUD2XML.Extensions;
 
 namespace OKUD2XML.Core

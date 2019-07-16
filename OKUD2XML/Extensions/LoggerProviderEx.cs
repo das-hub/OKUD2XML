@@ -9,7 +9,7 @@ namespace OKUD2XML.Extensions
         {
             return provider
                     .AddConsole(format: "{DateTime:HH:mm:ss}|{Level}|{Source}|{Message}")
-                    .AddEveryDayFile(format: "{DateTime:dd.MM.yyyy HH:mm:ss}|{Level}|{Source}|{Message}");
+                    .AddDailyFile(format: "{DateTime:dd.MM.yyyy HH:mm:ss}|{Level}|{Source}|{Message}");
         }
     }
 }
